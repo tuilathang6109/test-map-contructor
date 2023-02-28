@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    margin: 20px 0 10px 0;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 120px;
+  }
+  
+  input[type="text"], input[type="number"], button[type="submit"] {
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="number"] {
+    width: 200px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3E8E41;
+  }
+  
+Ở đây, chúng ta đã sử dụng JavaScript để tạo ra một lớp đối tượng `Product`, lưu trữ danh sách sản phẩm trong một mảng, và sử dụng `map()` để tạo ra các phần tử danh sách sản phẩm dựa trên các đối tượng sản phẩm trong mảng. Chúng ta cũng đã thêm một sự kiện lắng nghe để xử lý khi người dùng thêm sản phẩm mới và cập nhật danh sách sản phẩm trên trang web.
+
+Và đây là CSS được sử dụng:
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+.product-item {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5)
+}
